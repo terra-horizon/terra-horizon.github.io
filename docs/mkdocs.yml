@@ -1,0 +1,62 @@
+site_name: TERRA Horizon Project
+
+site_url: https://terra-horizon.github.io/
+repo_url: https://github.com/terra-horizon/terra-horizon.github.io
+
+nav:
+  - Overview: index.md
+  - Components:
+    - TERRA AAI: https://terra-horizon.github.io/terra-aai/
+    - TERRA Logging: https://terra-horizon.github.io/terra-logging/
+    - TERRA Accounting: https://terra-horizon.github.io/terra-accounting/
+  - FAQ & Known Issues: faq.md
+  - License: license.md
+  - Home: https://terra-horizon.github.io/
+
+theme:
+  name: 'material'
+  favicon: images/favicon.ico
+  logo: images/TERRA_Logo_Header.png
+  icon:
+    repo: fontawesome/brands/github
+  custom_dir: overrides
+  features:
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.path
+    - navigation.top
+
+extra_css:
+  - stylesheets/custom-footer.css
+  - stylesheets/mkdocsoad.css
+
+plugins:
+  - search
+  - mike
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
+
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra:
+#  generator: false
+  version:
+    provider: mike
+    alias: true
+    default: latest
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/terra-horizon
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/horizon_terra
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@TERRAHORIZON
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/terra-horizon
