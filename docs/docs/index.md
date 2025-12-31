@@ -1,4 +1,4 @@
-# TERRA AAI
+# TERRA Platform
 
 This is the documentation site for the TERRA project platform.
 
